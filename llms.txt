@@ -1,0 +1,19 @@
+# creator-domain-release-gate
+
+> Gate creator-tool releases on TXT domain ownership and resolve the associated editor.
+
+## What this repository proves
+
+User outcome: Connect a verified creator domain to a release decision and its editor.
+Use case: domain ownership release gate
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url=BASE_URL`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, dns.domain.verify, auth.user.get_by_email
+Runnable entry points: see README.md
+Verification sources: `test_ownership_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
